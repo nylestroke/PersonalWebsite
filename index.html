@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vladyslav Potapenko</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Font awesome css & js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+
+    <!-- JSQuery codes -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar-fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+        });
+
+        $(function () {
+        $(document).scroll(function () {
+            var $nav_brand = $(".brand");
+            $nav_brand.toggleClass('bordered', $(this).scrollTop() > $nav_brand.height());
+        });
+        });
+
+        $(function () {
+        $(document).scroll(function () {
+            var $icon = $(".icon");
+            $icon.toggleClass('fixed', $(this).scrollTop() > $icon.height());
+        });
+        });
+
+        $(function () {
+        $(document).scroll(function () {
+            var $button = $(".button");
+            $button.toggleClass('fixed', $(this).scrollTop() > $button.height());
+        });
+        });
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar-fixed-top">
+        <div class="nav-brand">
+            <a href="#" class="brand">nylestroke</a>
+        </div>
+        <ul id="nav-links" class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="button"><a href="pdf/cv.pdf">Check out CV</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveBar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <!-- Content -->
+    <div class="content" id="home">
+
+        <div class="banner">
+            <div class="banner_intro">
+                Vladyslav Potapenko
+            </div>
+            <div class="banner_information">
+                <span>14 y.o</span>
+                Junior Web Developer
+            </div>
+        </div>
+        <!-- About me section -->
+        <div class="aboutme" id="aboutme">
+            <div class="aboutme_intro">
+                <span>About me</span>
+            </div>
+            
+            <div class="aboutme_info_section">
+                <div class="aboutme_img">
+                    <img src="img/face.png" alt="nylestrokes_face">
+                </div>
+                <div class="aboutme_information">
+                    <span>Hello, I am Vladyslav Potapenko</span>
+                    <p>I am a Junior Web Developer at the moment with no experience. I study at the technical school and every time I get more and more new knowledge. I'm not bad at HTML & CSS, that's why I chose the side of web programming. I am currently learning the JavaScript language along with its JQuery API to get more options in this area. I also plan to learn Java & C++ in the future to try myself in another field.
+                    </p>
+                </div>
+            </div>
+            </div>
+            <!-- Work section -->
+            <div class="works" id="works">
+                <div class="works_intro">
+                    <span>My Works</span>
+                </div>
+                
+                <div class="works_container">
+                    <div class="works_block">
+                        <img src="img/work1.jpg" alt="">
+                        <div class="information">
+                          <div class="work_name">Flappy App</div>
+                          <div class="work_link">
+                            <a href="https://nylestroke.github.io/flappyapp/" target="_blank">
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="works_block">
+                        <img src="img/work2.jpg" alt="">
+                        <div class="information">
+                          <div class="work_name">Personal portfolio</div>
+                          <div class="work_link">
+                            <a href="https://nylestroke.me/" target="_blank">
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="works_block">
+                        <img src="img/work3.jpg" alt="">
+                        <div class="information">
+                          <div class="work_name">Quiz Application</div>
+                          <div class="work_link">
+                            <a href="https://nylestroke.github.io/quiz-application/" target="_blank">
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <!-- Contact section -->
+            <div class="contact" id="contact">
+                <div class="contact_intro">
+                    <span>Contact</span>
+                </div>
+
+                <div class="contact_container">
+                    <div class="form">
+                        <div class="contact-info">
+                          <h3 class="title">Let's get in touch</h3>
+                          <p class="text">
+                                Form to contact me. I reply to everyone within 2 days.
+                          </p>
+                
+                          <div class="info">
+                            <div class="information">
+                              <img src="img/location.png" class="icon" alt="" />
+                              <p>Gdansk, Poland</p>
+                            </div>
+                            <div class="information">
+                              <img src="img/email.png" class="icon" alt="" />
+                              <p>contact@nylestroke.me</p>
+                            </div>
+                            <div class="information">
+                              <img src="img/phone.png" class="icon" alt="" />
+                              <p>+48 729-368-168</p>
+                            </div>
+                          </div>
+                
+                          <div class="social-media">
+                            <p>Connect with me :</p>
+                            <div class="social-icons">
+                              <a href="https://facebook.com/nylestroke">
+                                <i class="fab fa-facebook-f"></i>
+                              </a>
+                              <a href="https://twitter.com/nylestroke">
+                                <i class="fab fa-twitter"></i>
+                              </a>
+                              <a href="https://instagram.com/nylestroke">
+                                <i class="fab fa-instagram"></i>
+                              </a>
+                              <a href="https://linkedin.com/nylestroke">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="contact-form">
+                          <span class="circle one"></span>
+                          <span class="circle two"></span>
+                
+                          <form action="index.html" autocomplete="off">
+                            <h3 class="title">Contact us</h3>
+                            <div class="input-container">
+                              <input type="text" name="name" class="input" />
+                              <label for="">Username</label>
+                              <span>Username</span>
+                            </div>
+                            <div class="input-container">
+                              <input type="email" name="email" class="input" />
+                              <label for="">Email</label>
+                              <span>Email</span>
+                            </div>
+                            <div class="input-container">
+                              <input type="tel" name="phone" class="input" />
+                              <label for="">Phone</label>
+                              <span>Phone</span>
+                            </div>
+                            <div class="input-container textarea">
+                              <textarea name="message" class="input"></textarea>
+                              <label for="">Message</label>
+                              <span>Message</span>
+                            </div>
+                            <input type="submit" value="Send" class="btn" />
+                          </form>
+                        </div>
+                      </div>
+                </div>
+                </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            &copy; 2022 <a href="https://nylestroke.me">nylestroke.me</a> . <span>All rights reserved</span>
+        </div>
+        <div class="links_area">
+            <a href="https://linkedin.com/nylestroke">
+                <i class="fab fa-github"></i>
+              </a>
+            <a href="https://facebook.com/nylestroke">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/nylestroke">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/nylestroke">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+    </footer>
+
+    <!-- JavaScript Codes -->
+    <script>
+        function responsiveBar() {
+        var x = document.getElementById("nav-links");
+        x.classList.toggle("nav-menu");
+        }
+    </script>
+
+    <script src="js/contact.js"></script>
+
+</body>
+</html>
