@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Vladyslav Potapenko</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 
     <!-- Meta tags -->
     <meta charset="UTF-8">
@@ -16,6 +17,26 @@
     src="https://kit.fontawesome.com/64d58efce2.js"
     crossorigin="anonymous"
   ></script>
+    
+    <!-- Meta tags -->
+    <!-- Primary Meta Tags -->
+    <title>Vladyslav Potapenko</title>
+    <meta name="title" content="Vladyslav Potapenko">
+    <meta name="description" content="Personal portfolio website, You're welcome">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nylestroke.me/">
+    <meta property="og:title" content="Vladyslav Potapenko">
+    <meta property="og:description" content="Personal portfolio website, You're welcome">
+    <meta property="og:image" content="https://i.ibb.co/WFTgvVG/gest-o-de-portfolio-1200-696x364.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nylestroke.me/">
+    <meta property="twitter:title" content="Vladyslav Potapenko">
+    <meta property="twitter:description" content="Personal portfolio website, You're welcome">
+    <meta property="twitter:image" content="https://i.ibb.co/WFTgvVG/gest-o-de-portfolio-1200-696x364.jpg">
 
     <!-- JSQuery codes -->
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -114,7 +135,7 @@
                           <div class="work_name">Flappy App</div>
                           <div class="work_link">
                             <a href="https://nylestroke.github.io/flappyapp/" target="_blank">
-                                <i class="fa fa-external-link"></i>
+                                <i class="fa fa-chain-broken"></i>
                             </a>
                           </div>
                         </div>
@@ -125,7 +146,7 @@
                           <div class="work_name">Personal portfolio</div>
                           <div class="work_link">
                             <a href="https://nylestroke.me/" target="_blank">
-                                <i class="fa fa-external-link"></i>
+                                <i class="fa fa-chain-broken"></i>
                             </a>
                           </div>
                         </div>
@@ -136,7 +157,7 @@
                           <div class="work_name">Quiz Application</div>
                           <div class="work_link">
                             <a href="https://nylestroke.github.io/quiz-application/" target="_blank">
-                                <i class="fa fa-external-link"></i>
+                                <i class="fa fa-chain-broken"></i>
                             </a>
                           </div>
                         </div>
@@ -151,77 +172,45 @@
                 </div>
 
                 <div class="contact_container">
-                    <div class="form">
+                  <div class="form">
                         <div class="contact-info">
                           <h3 class="title">Let's get in touch</h3>
-                          <p class="text">
-                                Form to contact me. I reply to everyone within 2 days.
-                          </p>
-                
-                          <div class="info">
-                            <div class="information">
-                              <img src="img/location.png" class="icon" alt="" />
-                              <p>Gdansk, Poland</p>
-                            </div>
-                            <div class="information">
-                              <img src="img/email.png" class="icon" alt="" />
-                              <p>contact@nylestroke.me</p>
-                            </div>
-                            <div class="information">
-                              <img src="img/phone.png" class="icon" alt="" />
-                              <p>+48 729-368-168</p>
-                            </div>
-                          </div>
-                
-                          <div class="social-media">
-                            <p>Connect with me :</p>
-                            <div class="social-icons">
-                              <a href="https://facebook.com/nylestroke">
-                                <i class="fab fa-facebook-f"></i>
-                              </a>
-                              <a href="https://twitter.com/nylestroke">
-                                <i class="fab fa-twitter"></i>
-                              </a>
-                              <a href="https://instagram.com/nylestroke">
-                                <i class="fab fa-instagram"></i>
-                              </a>
-                              <a href="https://linkedin.com/nylestroke">
-                                <i class="fab fa-linkedin-in"></i>
-                              </a>
-                            </div>
-                          </div>
                         </div>
                 
                         <div class="contact-form">
-                          <span class="circle one"></span>
-                          <span class="circle two"></span>
-                
-                          <form action="index.html" autocomplete="off">
-                            <h3 class="title">Contact us</h3>
-                            <div class="input-container">
-                              <input type="text" name="name" class="input" />
-                              <label for="">Username</label>
-                              <span>Username</span>
-                            </div>
-                            <div class="input-container">
-                              <input type="email" name="email" class="input" />
-                              <label for="">Email</label>
-                              <span>Email</span>
-                            </div>
-                            <div class="input-container">
-                              <input type="tel" name="phone" class="input" />
-                              <label for="">Phone</label>
-                              <span>Phone</span>
+                          <form action="https://formspree.io/f/myyolybr" method="POST">
+                            <div class="input-area">
+                              <div class="input-container">
+                                <input class="field" type="text" name="name" class="input" placeholder="Name"/>
+                              </div>
+                              <div class="input-container">
+                                <input class="field" type="email" name="email" class="input" placeholder="Email"/>
+                              </div>
                             </div>
                             <div class="input-container textarea">
-                              <textarea name="message" class="input"></textarea>
-                              <label for="">Message</label>
-                              <span>Message</span>
+                              <textarea class="field" type="message" name="message" rows="4" placeholder="Message" required></textarea>
                             </div>
-                            <input type="submit" value="Send" class="btn" />
+                            <div class="button-section">
+                              <input type="submit" value="Send" class="btn btn--3d" />
+                              <input type="reset" value="Clear" class="btn btn--3d" />
+                            </div>
                           </form>
                         </div>
                       </div>
+
+                        <div class="contact-information">
+                          <h3 class="title">Connect with me</h3>
+                          <div class="contact-links">
+                            <a href="https://github.com/nylestroke">
+                              <i class="fa fa-github"></i> GitHub</a>
+                            <a href="https://facebook.com/nylestroke">
+                              <i class="fa fa-facebook-square"></i> Facebook</a>
+                            <a href="https://twitter.com/nylestroke">
+                              <i class="fa fa-twitter"></i> Twitter</a>
+                            <a href="https://instagram.com/nylestroke">
+                              <i class="fa fa-instagram"></i> Instagram</a>
+                          </div>
+                        </div>
                 </div>
                 </div>
 
@@ -233,7 +222,7 @@
             &copy; 2022 <a href="https://nylestroke.me">nylestroke.me</a> . <span>All rights reserved</span>
         </div>
         <div class="links_area">
-            <a href="https://linkedin.com/nylestroke">
+            <a href="https://github.com/nylestroke">
                 <i class="fab fa-github"></i>
               </a>
             <a href="https://facebook.com/nylestroke">
@@ -256,7 +245,7 @@
         }
     </script>
 
-    <script src="js/contact.js"></script>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
 </body>
 </html>
