@@ -42,35 +42,12 @@
     <script src="js/jquery-3.6.0.min.js"></script>
 
     <script>
-
         $(function () {
         $(document).scroll(function () {
             var $nav = $(".navbar-fixed-top");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            $nav.toggleClass('no-pad', $(this).scrollTop() > $nav.height());
         });
         });
-
-        $(function () {
-        $(document).scroll(function () {
-            var $nav_brand = $(".brand");
-            $nav_brand.toggleClass('bordered', $(this).scrollTop() > $nav_brand.height());
-        });
-        });
-
-        $(function () {
-        $(document).scroll(function () {
-            var $icon = $(".icon");
-            $icon.toggleClass('fixed', $(this).scrollTop() > $icon.height());
-        });
-        });
-
-        $(function () {
-        $(document).scroll(function () {
-            var $button = $(".button");
-            $button.toggleClass('fixed', $(this).scrollTop() > $button.height());
-        });
-        });
-
     </script>
 
 </head>
@@ -80,17 +57,20 @@
     <nav class="navbar-fixed-top">
         <div class="nav-brand">
             <a href="#" class="brand">nylestroke</a>
+            <span class="motor">HTML · CSS · JS</span>
+            <label for="toggle" class="hambuger" onclick="responsiveBar()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
         </div>
-        <ul id="nav-links" class="nav-links">
+        <ul id="nav-links" class="nav-links nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutme">About me</a></li>
             <li><a href="#works">Works</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="button"><a href="pdf/cv.pdf">Check out CV</a></li>
         </ul>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveBar()">
-            <i class="fa fa-bars"></i>
-        </a>
     </nav>
 
     <!-- Content -->
@@ -101,7 +81,7 @@
                 Vladyslav Potapenko
             </div>
             <div class="banner_information">
-                <span>14 y.o</span>
+                <span>HTML · CSS · JS</span>
                 Junior Web Developer
             </div>
         </div>
@@ -241,9 +221,36 @@
     <script>
         function responsiveBar() {
         var x = document.getElementById("nav-links");
-        x.classList.toggle("nav-menu");
+        x.classList.toggle("checked");
         }
+
+        (function($) {
+    var $window = $(window),
+        $html = $('.nav-links');
+
+    $window.resize(function resize(){
+        if ($window.width() < 820) {
+            return $html.addClass('nav-menu');
+        }
+
+        $html.removeClass('nav-menu');
+    }).trigger('resize');
+})(jQuery);
+
+(function($) {
+    var $window = $(window),
+        $html = $('.button');
+
+    $window.resize(function resize(){
+        if ($window.width() < 820) {
+            return $html.addClass('fixed');
+        }
+
+        $html.removeClass('fixed');
+    }).trigger('resize');
+})(jQuery);
     </script>
+
 
 <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
