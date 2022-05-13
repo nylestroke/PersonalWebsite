@@ -49,6 +49,41 @@
         });
         });
     </script>
+    
+        <!-- JavaScript Codes -->
+    <script>
+        function responsiveBar() {
+        var x = document.getElementById("nav-links");
+        x.classList.toggle("checked");
+        }
+
+        (function($) {
+    var $window = $(window),
+        $html = $('.nav-links');
+
+    $window.resize(function resize(){
+        if ($window.width() < 820) {
+            return $html.addClass('nav-menu');
+        }
+
+        $html.removeClass('nav-menu');
+    }).trigger('resize');
+})(jQuery);
+
+(function($) {
+    var $window = $(window),
+        $html = $('.button');
+
+    $window.resize(function resize(){
+        if ($window.width() < 820) {
+            return $html.addClass('fixed');
+        }
+
+        $html.removeClass('fixed');
+    }).trigger('resize');
+})(jQuery);
+    </script>
+
 
 </head>
 <body>
@@ -216,41 +251,6 @@
             </a>
           </div>
     </footer>
-
-    <!-- JavaScript Codes -->
-    <script>
-        function responsiveBar() {
-        var x = document.getElementById("nav-links");
-        x.classList.toggle("checked");
-        }
-
-        (function($) {
-    var $window = $(window),
-        $html = $('.nav-links');
-
-    $window.resize(function resize(){
-        if ($window.width() < 820) {
-            return $html.addClass('nav-menu');
-        }
-
-        $html.removeClass('nav-menu');
-    }).trigger('resize');
-})(jQuery);
-
-(function($) {
-    var $window = $(window),
-        $html = $('.button');
-
-    $window.resize(function resize(){
-        if ($window.width() < 820) {
-            return $html.addClass('fixed');
-        }
-
-        $html.removeClass('fixed');
-    }).trigger('resize');
-})(jQuery);
-    </script>
-
 
 <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
