@@ -1,3 +1,9 @@
-# Personal Website - Portfolio
+# nylestroke.me website
+My personal portfolio website built using HTML, CSS, JS
 
-Link [here](https://nylestroke.me)
+# Overview
+Final verison: [nylestroke.me](https://nylestroke.me)
+
+# More information/Links
+* [Follow me on Instagram](https://instagram.com/nylestroke)
+* Discord : `nylestroke#9372`
