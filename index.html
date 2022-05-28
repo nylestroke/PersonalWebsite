@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vladyslav Potapenko</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Font awesome css & js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Meta tags -->
+    <!-- Primary Meta Tags -->
+    <title>Vladyslav Potapenko</title>
+    <meta name="title" content="Vladyslav Potapenko" />
+    <meta
+      name="description"
+      content="Personal portfolio website, You're welcome"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nylestroke.me/" />
+    <meta property="og:title" content="Vladyslav Potapenko" />
+    <meta
+      property="og:description"
+      content="Personal portfolio website, You're welcome"
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/WFTgvVG/gest-o-de-portfolio-1200-696x364.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nylestroke.me/" />
+    <meta property="twitter:title" content="Vladyslav Potapenko" />
+    <meta
+      property="twitter:description"
+      content="Personal portfolio website, You're welcome"
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.ibb.co/WFTgvVG/gest-o-de-portfolio-1200-696x364.jpg"
+    />
+
+    <!-- JSQuery codes -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass("no-pad", $(this).scrollTop() > $nav.height());
+        });
+      });
+
+      $(function () {
+        $(document).scroll(function () {
+          var $btn = $(".button");
+          $btn.toggleClass("boxed", $(this).scrollTop() > $btn.height());
+        });
+      });
+    </script>
+
+    <!-- JavaScript Codes -->
+    <script>
+      function responsiveBar() {
+        var x = document.getElementById("nav-links");
+        x.classList.toggle("checked");
+      }
+
+      (function ($) {
+        var $window = $(window),
+          $html = $(".nav-links");
+
+        $window
+          .resize(function resize() {
+            if ($window.width() < 820) {
+              return $html.addClass("nav-menu");
+            }
+
+            $html.removeClass("nav-menu");
+          })
+          .trigger("resize");
+      })(jQuery);
+
+      (function ($) {
+        var $window = $(window),
+          $html = $(".button");
+
+        $window
+          .resize(function resize() {
+            if ($window.width() < 820) {
+              return $html.addClass("fixed");
+            }
+
+            $html.removeClass("fixed");
+          })
+          .trigger("resize");
+      })(jQuery);
+    </script>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar-fixed-top" id="nav">
+      <div class="nav-brand">
+        <a href="#" class="brand">nylestroke</a>
+        <span class="motor">Think · Learn · Create</span>
+        <label for="toggle" class="hambuger" onclick="responsiveBar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-collapse">
+        <ul id="nav-links" class="nav-links nav-menu">
+          <li class="nav-item"><a onclick="responsiveBar()" class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a onclick="responsiveBar()" class="nav-link" href="#aboutme">About me</a></li>
+          <li class="nav-item"><a onclick="responsiveBar()" class="nav-link" href="#works">Works</a></li>
+          <li class="nav-item"><a onclick="responsiveBar()" class="nav-link" href="#contact">Contact</a></>
+          <li class="nav-item button">
+            <a href="https://github.com/nylestroke" target="_blank"
+              >Check out GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content" id="home">
+      <div class="banner">
+        <div class="banner_intro">Vladyslav Potapenko</div>
+        <div class="banner_information">
+          <span>Think · Learn · Create</span>
+          Student Programmer
+        </div>
+      </div>
+      <!-- About me section -->
+      <div class="aboutme" id="aboutme">
+        <div class="aboutme_intro">
+          <span>About me</span>
+        </div>
+
+        <div class="aboutme_info_section">
+          <div class="aboutme_img">
+            <img src="img/face.png" alt="nylestrokes_face" />
+          </div>
+          <div class="aboutme_information">
+            <span>Hello, I am Vladyslav Potapenko</span>
+            <p>
+              I am a Junior Web Developer at the moment with no experience. I
+              study at the technical school and every time I get more and more
+              new knowledge. I'm not bad at HTML & CSS, that's why I chose the
+              side of web programming. I am currently learning the JavaScript
+              language along with its JQuery API to get more options in this
+              area. I also plan to learn Java & C++ in the future to try myself
+              in another field.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Work section -->
+      <div class="works" id="works">
+        <div class="works_intro">
+          <span>My Works</span>
+        </div>
+
+        <div class="works_container">
+          <div class="works_block">
+            <img src="img/work2.jpg" alt="" />
+            <div class="information">
+              <div class="work_name">Flappy App</div>
+              <div class="work_link">
+                <a
+                  href="https://nylestroke.github.io/flappyapp/"
+                  target="_blank"
+                >
+                  <i class="fa fa-chain-broken"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact section -->
+      <div class="contact" id="contact">
+        <div class="contact_intro">
+          <span>Contact</span>
+        </div>
+
+        <div class="contact_container">
+          <div class="form">
+            <div class="contact-info">
+              <h3 class="title">Let's get in touch</h3>
+            </div>
+
+            <div class="contact-form">
+              <form action="https://formspree.io/f/myyolybr" method="POST">
+                <div class="input-area">
+                  <div class="input-container">
+                    <input
+                      class="field"
+                      type="text"
+                      name="name"
+                      class="input"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="input-container">
+                    <input
+                      class="field"
+                      type="email"
+                      name="email"
+                      class="input"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="input-container textarea">
+                  <textarea
+                    class="field"
+                    type="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <br>
+                <div id="g-recaptcha-response" class="g-recaptcha" data-sitekey="6Lf3zyUgAAAAALZGoEZ-fNgyZlGgDNBs189rxs2A"></div>
+                <br>
+                <div class="button-section">
+                  <input type="submit" value="Send" class="btn btn--3d" />
+                  <input type="reset" value="Clear" class="btn btn--3d" />
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <script>
+            window.onload = function() { 
+              var el = document.getElementById('g-recaptcha-response'); 
+              if (el) { 
+                el.setAttribute('required', 'required'); 
+              } 
+            }
+          </script>
+
+          <div class="contact-information">
+            <h3 class="title">Connect with me</h3>
+            <div class="contact-links">
+              <a href="https://github.com/nylestroke">
+                <i class="fa fa-github"></i> GitHub</a
+              >
+              <a href="https://facebook.com/nylestroke">
+                <i class="fa fa-facebook-square"></i> Facebook</a
+              >
+              <a href="https://twitter.com/nylestroke">
+                <i class="fa fa-twitter"></i> Twitter</a
+              >
+              <a href="https://instagram.com/nylestroke">
+                <i class="fa fa-instagram"></i> Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="copyright">
+        &copy; 2022 <a href="https://nylestroke.me">nylestroke.me</a> .
+        <span>All rights reserved</span>
+      </div>
+      <div class="links_area">
+        <a href="https://github.com/nylestroke">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://facebook.com/nylestroke">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/nylestroke">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com/nylestroke">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  </body>
+</html>
