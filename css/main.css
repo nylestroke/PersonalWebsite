@@ -155,7 +155,7 @@ nav .nav-brand a:hover {
   border-left: 1px solid #ccc;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 880px) {
     nav {
         justify-content: unset;
         flex-direction: column;
