@@ -368,8 +368,8 @@ nav .nav-brand a:hover {
     position: absolute;
     display: flex;
     gap: 0.5em;
-    transform: translate(8%, -200%);
-    -ms-transform: translate(8%, -200%);
+    transform: translate(5%, -200%);
+    -ms-transform: translate(5%, -200%);
     padding: 8px;
     border-radius: 6px;
     text-transform: uppercase;
